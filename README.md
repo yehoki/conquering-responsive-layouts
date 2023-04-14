@@ -4,6 +4,24 @@ In this repository I will taking notes, and completing the challenges from the 2
 Using this README file, I will be taking down notes, any code snippets I find useful from the examples, as well as problems I ran into during the challenges - mainly for personal use in order to come back in the future.
 
 
+## Chapters
+
+### [Day 1](#day-1---using-percentages--avoiding-heights)
+#### [Percentages vs Fixed widths](#percentages-vs-fixed-widths)
+#### [Percentages on the child](#percentages-on-the-child)
+#### [Why it's a good idea to avoid heights](#why-its-a-good-idea-to-avoid-heights)
+#### [Challenge 1](#challenge-1)
+### [Day 2](#day-2---getting-familiar-with-relative-units)
+#### [CSS em and rem explained](#css-em-and-rem-explained)
+#### [Why you shouldn't set font-sizes using em](#why-you-shouldnt-set-font-sizes-using-em)
+### [Day 3](#day-3---enter-max-width)
+### [Day 4](#day-4---extra-curricular-activities)
+### [Day 5](#day-5---practice-time)
+### [Day 6](#day-6---review)
+### [Day 7](#day-7---solution-to-challenge-3)
+### [Day 8](#day-8---flexbox-basics)
+### [Day 9](#day-9---a-deeper-dive-into-flexbox)
+
 ## Day 1 - Using percentages & avoiding heights
 
 ### Percentages vs Fixed widths
