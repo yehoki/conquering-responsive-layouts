@@ -58,6 +58,46 @@ In this challenge, we applied everything from before in Day 1:
 
 ## Day 2 - Getting familiar with relative units
 
+### CSS em and rem explained
+
+This lesson was a recap of what has been said before about `em` and `rem` units. I took some notes in the Day 1 section already so just adding onto those here.
+
+In general, when dealing with font-sizes it is much better to use `rem` as it stays consistent, since `em` relates to the direct parent we can sometimes get lost where it's corresponding.
+
+When using `rem` with margins or padding it behaves slightly different. When we used `em` for properties like `margin` or `padding`, it looks at the value of the font-size within the same element.
+
+So for example, consider this:
+
+```CSS
+div {
+    font-size: 2.5em;
+    margin-botton: 1em;
+}
+```
+We will get that the bottom margin is equal to `2.5em` since it's 1 unit of the current font-size.
+
+However, like with `font-size`, `rem` units always look at the root, and so they will always look at what the `<html>` element's properties are.
+
+One *trick* for responsive buttons as an example, is setting their `font-size` property, and then setting the `padding` using `em` units - this way when we rescale the font-size, we will also rescale the padding on the button.
+
+### Why you shouldn't set font-sizes using em
+
+As we previously saw, `em` units look directly at their parent unit when comparing the size, in our case this would be font size.
+Now, imagine you set something like this:
+```CSS
+ul {
+    font-size: 1.5em;
+}
+```
+Although it seems fine, we are just making sure that an unordered list has a font-size of 1.5 times it's parent, this can scale dramatically if we end up with a list of lists - each new list inside the old list will amplify the size of their text by 1.5.
+
+If we want to set the font-size of objects uniquely in a multiple children elements, we can use `rem` units instead. Even though it might force us to write more CSS, it will make sure we are consistent throughout.
+
+As we saw previously, one area where we should use `em` units instead of `rem` would be when setting the `padding` and `margin` properties on child elements. 
+When using `em` units for `margin` or `padding` it references directly to the child's `font-size` value, meaning as we zoom in or out it will scale depending on the font-size; whereas if we were to use `rem` units, this would always be depending on the `<html>` element font-size.
+
+***TLDR***: Use `rem` units for `font-size`, use `em` units for `margin` and `padding`, and **BE CAREFUL** when using `em` units within a deep-nested child element.
+
 
 ## Day 3 - Enter max-width
 
