@@ -1,11 +1,10 @@
-# conquering-responsive-layouts
+# Conquering responsive layouts template
 
-In this repository I will taking notes, and completing the challenges from the 21 day course - [Conquering Responsive Layouts](https://courses.kevinpowell.co/conquering-responsive-layouts) by Kevin Powell.
-Using this README file, I will be taking down notes, any code snippets I find useful from the examples, as well as problems I ran into during the challenges - mainly for personal use in order to come back in the future.
+A simple template to hold all your notes for the [Conquering responsive layouts](https://courses.kevinpowell.co/conquering-responsive-layouts) course by [Kevin Powell](https://www.kevinpowell.co/).
 
+<!-- ------------------------------------------------------------------------ -->
 
-## Chapters
-
+## Table of contents 
 - [Day 1 - Using percentages & avoiding heights](#day-1---using-percentages---avoiding-heights)
   * [Percentages vs Fixed widths](#percentages-vs-fixed-widths)
   * [Percentages on the child](#percentages-on-the-child)
@@ -62,6 +61,7 @@ Using this README file, I will be taking down notes, any code snippets I find us
   * [Links to other resources](#links-to-other-resources)
   * [Your final challenge](#your-final-challenge)
 
+<!-- ------------------------------------------------------------------------ -->
 ## Day 1 - Using percentages & avoiding heights
 
 ### Percentages vs Fixed widths
