@@ -186,7 +186,16 @@ Personal notes learnt from Kevin's solution:
 
 ## Day 4 - Extra curricular activities
 
+For this one, firstly there is some extra content about viewport units in the Discord server.
+Secondly, in the CSS units video, setting font-size with these units has some accessibility issues doing so, so unless it's a personal project - try to avoid them for setting font-size.
+
 ### CSS Units: vh, vw, vmin, vmax
+
+The `vh` unit represents the current viewport height, and `vw` units represent the current viewport width. These however change in mobile designs, as then the viewport is including the search bar for a mobile browser, and so causes content to overflow - be careful and use media queries if necessary!
+
+`vmax` and `vmin` units look for the largest and smallest values for both width and height - whichever one wins out.
+
+An idea to think of for dynamic layouts, is using `vh` or `vw` units for the padding of an element, which will respond as we change our layout display.
 
 ## Day 5 - Practice Time!
 
