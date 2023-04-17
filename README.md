@@ -160,7 +160,29 @@ When using `em` units for `margin` or `padding` it references directly to the ch
 
 ### Adding in a max-width
 
+Sometimes, when we get to bigger sizes, when we define width on an element, as we increase the screen width, it keeeeeeeps on widening. We might get a div that goes from the very left of our screen to the very right, and it's not pretty - especially if our content inside the div doesn't take up all that space.
+Well, the `max-width` property in CSS allows to set a maximum width of an object, once set to a value even if we grow our screen it does not exceed that value no matter what.
+
+Consider this example:
+```CSS
+.div-class {
+  width: 80%;
+  max-width: 600px;
+}
+```
+Here, we have an *ideal* width of 80% to be at all times, **HOWEVER** only up to a width of `600px` - which solves our problem.
+
+Also, since we have `width` and `max-width` properties it's quite obvious that `min-width` also exists. However, similar to heights and setting constant values for widths - avoid it unless you have to use it, otherwise it will fight against being responsive.
+
 ### Challenge 2
+
+So, in this challenge we will be using everything from Day 3, and Challenge 1 and a bit more - just for a challenge! 
+
+As this chapter was mainly about max-width, and how it responds with increasing widths of the screen, we simply tried combining the first challenge with what was learnt here.
+
+Personal notes learnt from Kevin's solution:
+- Always try to reuse already made classes if we share properties. Use cascade to your advantage. Oh and it makes the CSS that much more readable.
+- `margin: 0 auto;` lets you center things horizontally very easily.
 
 ## Day 4 - Extra curricular activities
 
